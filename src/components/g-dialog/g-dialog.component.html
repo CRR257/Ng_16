@@ -1,0 +1,5 @@
+<div class="dialog-background" [ngClass]="{ open: isOpen() }">
+  <dialog class="dialog-container" [open]="isOpen()">
+    <ng-content />
+  </dialog>
+</div>

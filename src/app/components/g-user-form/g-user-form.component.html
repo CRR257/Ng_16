@@ -1,0 +1,11 @@
+<form [formGroup]="form" class="user-form">
+  <p>Hi user! 🐱</p>
+  <div>
+    <label for="name">Cat's name:</label>
+    <input type="text" formControlName="name" />
+  </div>
+  <div class="user-form-actions">
+  <app-g-button (click)="submit()">save</app-g-button>
+  <app-g-button (click)="closeDialog()">close </app-g-button>
+</div>
+</form>
